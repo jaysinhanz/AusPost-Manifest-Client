@@ -7,6 +7,6 @@ namespace ECFDataLayer.Repositories
 {
     public interface IManifestRepository
     {
-        PCMSManifest GetFirstManifest();
+        Order GetFirstManifest();
     }
 }
