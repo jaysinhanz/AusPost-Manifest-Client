@@ -143,8 +143,8 @@ namespace ECFDataLayer.Repositories
                 items.Add( new Item
                 {
                     article_id = article.ArticleNumber,barcode_id = article.BarcodeArticleNumber
-                    ,consignment_id = consignmentNumber,height=10,length = 10,product_id = "TF25"
-                    ,weight = article.ActualWeight.ToString("00.00"), width = 10
+                    ,consignment_id = consignmentNumber,height=10,length = 10,product_id = "7E55",
+                    weight = article.ActualWeight.ToString("00.00"), width = 10
                 });
                 
             }

@@ -4,12 +4,16 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace ECFDataLayer.Mappings
 {
     public class Order
     {
+        public string order_reference => MerchantLocationID + '_' + ManifestNumber.ToString();
+        [JsonIgnore]
         public int ManifestNumber { get; set; }
+        [JsonIgnore]
         public string MerchantLocationID { get; set; }
         public Shipment[] shipments { get; set; }
     }
